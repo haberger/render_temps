@@ -5,7 +5,7 @@ dataset_name: "tracebot_templates" #dataset_name
 
 obj_pose: "predefined_poses/obj_poses_level2.npy"
 cam_pose: "predefined_poses/cam_poses_level2.npy"
-poses: "upper"
+poses: "all"
 
 cam:
   height: 720

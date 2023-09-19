@@ -392,7 +392,7 @@ def render(config):
 
     dataset_name = config["dataset_name"]
 
-    target_path = os.path.join(config['output_dir'], 'bop_data', dataset_name, 'models')
+    target_path = os.path.join(config['output_dir'], dataset_name, 'models')
     if not os.path.isdir(target_path):
         shutil.copytree(config['models_dir'], target_path)
 
@@ -500,6 +500,7 @@ def render(config):
         # break
         for part in tracebot[obj]["parts"]:
             part.hide(True)
+    np.save(os.path.join(config['output_dir'], name, "obj_poses.npy"), poses)
 
 
 
