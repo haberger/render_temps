@@ -481,7 +481,7 @@ def render(config):
             print(f"Directory '{obj_data_dir}' created.")
         else:
             print(f"Directory '{obj_data_dir}' already exists.")
-        for idx_frame, obj_pose in enumerate(poses[::10]):
+        for idx_frame, obj_pose in enumerate(poses):
             for part in tracebot[obj]["parts"]:
                 part.set_local2world_mat(obj_pose)
                 part.set_scale([1,1,1])

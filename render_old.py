@@ -4,6 +4,7 @@ import os
 import numpy as np
 import bpy
 from PIL import Image
+import sys
 
 parser = argparse.ArgumentParser()
 # parser.add_argument('bop_parent_path', nargs='?', help="Path to the bop datasets parent directory")
